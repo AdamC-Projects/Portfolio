@@ -88,6 +88,23 @@ color: gray;
 
 }
 
+.container img {
+
+
+  
+  width: 30em;
+  transition: transform .2s;
+  border-radius: 2.5vw;
+
+}
+
+.container img:hover {
+
+
+  transform: scale(1.1);
+
+}
+
 
 /* Modal */
 
