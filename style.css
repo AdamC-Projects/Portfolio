@@ -3,10 +3,12 @@ body {
   overflow-y: scroll; /* Locks scroll */
 }
 
-/* * {
+/*  {
   margin: 0%;
   outline: 1px solid red !important; 
 }
+
+*/
 
 /* header + Navigation CSS  */
 
