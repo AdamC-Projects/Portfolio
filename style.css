@@ -123,10 +123,28 @@ background-color: rgb(247, 247, 247);
 
 }
 
+.planet {
+
+  height: 1px;
+  object-fit: none;
+
+}
+
 .container video:hover {
 
 
   transform: scale(1.1);
+
+}
+
+.container iframe {
+
+
+  max-width: 50%;
+  transition: transform .2s;
+  border-radius: 2.5vw;
+  margin: 1.8vw;
+  
 
 }
 
