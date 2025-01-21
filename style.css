@@ -94,13 +94,18 @@ background-color: rgb(247, 247, 247);
 
 .container img {
 
-  width: auto;
-  height: auto;
   object-fit: cover;
   transition: transform .2s;
   border-radius: 2.5vw;
   margin: 1.8vw;
-  max-width: 25%
+  max-width: 25%;
+  max-height: 25%;
+
+}
+
+.crate {
+
+
 
 }
 
@@ -123,12 +128,7 @@ background-color: rgb(247, 247, 247);
 
 }
 
-.planet {
 
-  height: 1px;
-  object-fit: none;
-
-}
 
 .container video:hover {
 
@@ -200,8 +200,34 @@ background-color: rgb(247, 247, 247);
 
 /* About section  */
 
+.about {
+  margin: 1.8vw;
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.profile {
+  
+  width: 45vw;
+  border-radius: 50px;
+  margin: 1.7vh;
 
+}
+
+.description {
+  
+  width: 45vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+}
+
+p {
+  font-family: "Open Sans", serif;
+  font-size: 1.3vw;
+  margin: 1.7vh;
+}
 
 
 
