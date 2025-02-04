@@ -28,6 +28,7 @@
             <a href="about.html" id="Nav_Text">About</a>
             <a href="projects.html" id="Nav_Text">Projects</a>
             <a href="skills.html" id="Nav_Text">Skills</a>
+            <p id="p1">test</p>
         </nav>
 
     </header>
@@ -91,11 +92,17 @@
     document.getElementById("modal").addEventListener("click", function() {
         body.style.overflowY = "scroll"; 
         modal.style.display = "none";
-       var cookie_test = document.cookie = "username=John Doe";
-       console.log(cookie_test);
+        var cookie_test = document.cookie = "username=John Doe";
+        console.log(cookie_test);
+        document.getElementById("p1").innerHTML = cookie_test;
+      
         
        
     });
+</script>
+
+<script>
+
 </script>
 
 
