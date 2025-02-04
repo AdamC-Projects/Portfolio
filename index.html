@@ -73,6 +73,12 @@
     </div>
 </section>
 </main>
+
+<script>
+    let x = document.cookie;
+    document.getElementById("p1").innerHTML = x;
+    console.log(x);
+</script>
    
 <script>
 
@@ -93,16 +99,16 @@
         body.style.overflowY = "scroll"; 
         modal.style.display = "none";
         var cookie_test = document.cookie = "username=John Doe";
+        var cookie_test2 = document.cookie = "username2=Jane Doe";
         console.log(cookie_test);
+        console.log(cookie_test2);
         document.getElementById("p1").innerHTML = cookie_test;
+        let x = document.cookie;
+        console.log(x)
       
         
        
     });
-</script>
-
-<script>
-
 </script>
 
 
