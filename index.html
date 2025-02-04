@@ -91,6 +91,8 @@
     document.getElementById("modal").addEventListener("click", function() {
         body.style.overflowY = "scroll"; 
         modal.style.display = "none";
+       var cookie_test = document.cookie = "username=John Doe";
+       console.log(cookie_test);
         
        
     });
