@@ -6,128 +6,146 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
 </head>
-<body id = "body">
-    
-    <div id = "modal" class = "modal">
-        <div class ="modal-content">
-            <article class ="close">X</article>
-            <article class = "video-image"></article>
-            
+<body id="body">
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="close">×</div>
+            <div id="modal-content-container"></div>
         </div>
     </div>
+
+    <!-- Header and Navigation -->
     <header>
-
-        <a href="">Adam Carrier's Portfolio</a>
-
+        <a href="index.html">Adam Carrier's Portfolio</a>
         <nav>
-            
-            <a href="contact.html" id="Nav_Text1">Contact</a>
-            <a href="about.html" id="Nav_Text">About</a>
-            <a href="projects.html" id="Nav_Text">Projects</a>
-            <a href="skills.html" id="Nav_Text">Skills</a>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="skills.html">Skills</a>
         </nav>
-
     </header>
+    <div class="nav_deco"></div>
 
-    <div class = "nav_deco"></div>
-
+    <!-- Main Content -->
+    <main>
+        <section class="projects-section">
+            <h1>My Projects</h1>
+            <div class="projects-list">
+                <!-- Project 1 -->
+                <div class="project-item">
+                    <img src="images/logo.png" alt="Portfolio image 1" class="project-image">
+                    <div class="project-info">
+                        <h2>Functional Educational Website</h2>
+                        <p>This was a project focusing on creating an Medieval Educational website, with gamfied elements such as (Quizzes, Achivement, Badges) </p>
+                        <a href="https://github.coventry.ac.uk/pages/carriera2/6034CMD-Project/index.html" class="project-link">View Project</a>
+                    </div>
+                </div>
     
+                <!-- Project 2 -->
+                <div class="project-item">
+                    <img src="images/Robo.png" alt="Portfolio image 2" class="project-image">
+                    <div class="project-info">
+                        <h2>Robo Reborn</h2>
+                        <p>A game produced in 5 days for GameJam TakeOver 2023 - showcases teamwork skills.</p>
+                        <a href="https://itch.io/jam/gamejam-takeover-2024/rate/2984978" class="project-link">View Project</a>
+                    </div>
+                </div>
+    
+                <!-- Project 3 -->
+                <div class="project-item">
+                    <img src="images/locked.PNG" alt="Portfolio image 3" class="project-image">
+                    <div class="project-info">
+                        <h2>Locked</h2>
+                        <p>A game produced in 5 days for GameJam TakeOver 2023 - showcases teamwork skills.</p>
+                        <a href="project3.html" class="project-link">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-item">
+                    <img src="images/3.JPG" alt="Portfolio image 3" class="project-image">
+                    <div class="project-info">
+                        <h2>Functional Forum Webstie</h2>
+                        <p>This project was designed to develop skills in back-end website development</p>
+                        <a href="project3.html" class="project-link">View Project</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script>
+        // Modal functionality
+        const modal = document.getElementById("modal");
+        const modalContent = document.getElementById("modal-content-container");
+        const closeBtn = document.querySelector(".close");
+        const mediaItems = document.querySelectorAll(".media-item");
         
-<main>
-<section>
-    <div class="container">
-        <img src="images/1.JPG" alt="HTML5 Icon">
-        <img src="images/2.JPG" alt="HTML5 Icon">
-        <img src="images/3.JPG" alt="HTML5 Icon">
-        <img src="images/4.png" alt="HTML5 Icon">
-        <video  controls>
-            <source src="videos/1.mp4" type="video/mp4">
-
-          Your browser does not support the video tag.
-          </video>
-          <video  controls>
-            <source src="videos/2.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video>
-    
-
-        <article id="myBtn">
-            2  
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
+        // Add click event to all media items
+        mediaItems.forEach(item => {
+            item.addEventListener("click", function() {
+                // Get the content based on media type
+                const mediaType = this.getAttribute("data-type");
+                let content;
+                
+                if (mediaType === "image") {
+                    const img = this.querySelector("img");
+                    content = `<img src="${img.src}" alt="${img.alt}">`;
+                } else if (mediaType === "video") {
+                    const video = this.querySelector("video");
+                    content = `<video controls autoplay>
+                        <source src="${video.querySelector("source").src}" type="video/mp4">
+                    </video>`;
+                } else if (mediaType === "youtube") {
+                    const iframe = this.querySelector("iframe");
+                    // Add autoplay parameter to YouTube URL
+                    let src = iframe.src;
+                    if (src.includes('?')) {
+                        src += '&autoplay=1';
+                    } else {
+                        src += '?autoplay=1';
+                    }
+                    content = `<iframe src="${src}" title="${iframe.title}" allowfullscreen></iframe>`;
+                }
+                
+                // Set content and show modal
+                modalContent.innerHTML = content;
+                modal.style.display = "block";
+                document.body.style.overflow = "hidden";
+            });
+        });
         
-    </div>
-</section>
-</main>
-   
-<script>
-
-    
-    var modal = document.getElementById("modal");
-    document.getElementById("myBtn").addEventListener("click", function() {
-        modal.style.display = "block";
-        body.style.overflow = "hidden";
-       
-    });
-</script>
-
-<script>
-
-    var modal = document.getElementById("modal");
-    var body = document.getElementById("body");
-    document.getElementById("modal").addEventListener("click", function() {
-        body.style.overflowY = "scroll"; 
-        modal.style.display = "none";
+        // Close modal when clicking the close button
+        closeBtn.addEventListener("click", function() {
+            modal.style.display = "none";
+            document.body.style.overflow = "scroll";
+            modalContent.innerHTML = ""; // Clear content
+        });
         
-       
-    });
-</script>
-
-
-    
+        // Close modal when clicking outside of content
+        modal.addEventListener("click", function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+                document.body.style.overflow = "scroll";
+                modalContent.innerHTML = ""; // Clear content
+            }
+        });
+        
+        // Add escape key functionality to close modal
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Escape" && modal.style.display === "block") {
+                modal.style.display = "none";
+                document.body.style.overflow = "scroll";
+                modalContent.innerHTML = "";
+            }
+        });
+    </script>
 </body>
 </html>

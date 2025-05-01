@@ -6,112 +6,246 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <title>Adam Carrier's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
 </head>
-<body id = "body">
-    
-    <div id = "modal" class = "modal">
-        <div class ="modal-content">
-            <article class ="close">X</article>
-            <article class = "video-image"></article>
-            
+<body id="body">
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="close">×</div>
+            <div id="modal-content-container"></div>
         </div>
     </div>
+
+    <!-- Header and Navigation -->
     <header>
-
         <a href="index.html">Adam Carrier's Portfolio</a>
-
         <nav>
-            
-            <a href="contact.html" id="Nav_Text1">Contact</a>
-            <a href="about.html" id="Nav_Text">About</a>
-            <a href="projects.html" id="Nav_Text">Projects</a>
-            <a href="skills.html" id="Nav_Text">Skills</a>
-            <p id="p1">test</p>
+            <a href="index.html" class="active">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
         </nav>
-
     </header>
+    <div class="nav_deco"></div>
 
-    <div class = "nav_deco"></div>
+    <!-- Main Content -->
+    <main>
+        <section>
+            <div class="container">
+                <!-- Images - Each in its own media-item container -->
+                <div class="media-item" data-type="image">
+                    <div class="media-wrapper">
+                        <img src="images/1.JPG" alt="Portfolio image 1">
+                    </div>
+                    <div class="media-caption">Project 1</div>
+                </div>
 
-    
+                <div class="media-item" data-type="image">
+                    <div class="media-wrapper">
+                        <img src="images/barrel.png" alt="Portfolio image 1">
+                    </div>
+                    <div class="media-caption">Project 1</div>
+                </div>
+                
+                <div class="media-item" data-type="image">
+                    <div class="media-wrapper">
+                        <img src="images/2.JPG" alt="Portfolio image 2">
+                    </div>
+                    <div class="media-caption">Project 2</div>
+                </div>
+                
+                <div class="media-item" data-type="image">
+                    <div class="media-wrapper">
+                        <img src="images/3.JPG" alt="Portfolio image 3">
+                    </div>
+                    <div class="media-caption">Project 3</div>
+                </div>
+                
+                <div class="media-item" data-type="image">
+                    <div class="media-wrapper">
+                        <img src="images/4.JPG" alt="Portfolio image 4">
+                    </div>
+                    <div class="media-caption">Educational Poster</div>
+                </div>
+                
+                <div class="media-item" data-type="image">
+                    <div class="media-wrapper">
+                        <img src="images/5.JPG" alt="Portfolio image 5">
+                    </div>
+                    <div class="media-caption">Project 5</div>
+                </div>
+                
+                <!-- Video -->
+                <div class="media-item" data-type="video">
+                    <div class="video-wrapper">
+                        <video controls>
+                            <source src="videos/2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="media-caption">Video Project</div>
+                </div>
+                
+                <!-- YouTube videos -->
+                <div class="media-item" data-type="youtube">
+                    <div class="iframe-wrapper">
+                        <iframe src="https://www.youtube.com/embed/jfi8CMO-uK4" title="YouTube video 1" allowfullscreen></iframe>
+                    </div>
+                    <div class="media-caption">YouTube Demo 1</div>
+                </div>
+                
+                <div class="media-item" data-type="youtube">
+                    <div class="iframe-wrapper">
+                        <iframe src="https://www.youtube.com/embed/Wmzt2cSadMU" title="YouTube video 2" allowfullscreen></iframe>
+                    </div>
+                    <div class="media-caption">3D Animation</div>
+                </div>
+                
+                <div class="media-item" data-type="youtube">
+                    <div class="iframe-wrapper">
+                        <iframe src="https://www.youtube.com/embed/31lgerHH1Mo" title="YouTube video 3" allowfullscreen></iframe>
+                    </div>
+                    <div class="media-caption">VFX</div>
+                </div>
+
+
+
+                <div class="media-item" data-type="youtube">
+                    <div class="iframe-wrapper">
+                        <iframe src="https://www.youtube.com/embed/Y4LltJ4oNps" title="YouTube video 3" allowfullscreen></iframe>
+                    </div>
+                    <div class="media-caption">VFX</div>
+                </div>
+
+                <div class="media-item" data-type="youtube">
+                    <div class="iframe-wrapper">
+                        <iframe src="https://www.youtube.com/embed/IW757ofyCi4" title="YouTube video 3" allowfullscreen></iframe>
+                    </div>
+                    <div class="media-caption">VFX</div>
+                </div>
+
+                <div class="media-item" data-type="youtube">
+                    <div class="iframe-wrapper">
+                        <iframe src="https://www.youtube.com/embed/MTqApXKXF28" title="YouTube video 3" allowfullscreen></iframe>
+                    </div>
+                    <div class="media-caption">Educational Animation</div>
+                </div>
+
+                <div class="media-item" data-type="youtube">
+                    <div class="iframe-wrapper">
+                        <iframe src="https://www.youtube.com/embed/xRTV54THJ18" title="YouTube video 3" allowfullscreen></iframe>
+                    </div>
+                    <div class="media-caption">Educational Animation</div>
+                </div>
+
+                <div class="media-item" data-type="image">
+                    <div class="media-wrapper">
+                        <img src="images/Poster.png" alt="Portfolio image 5">
+                    </div>
+                    <div class="media-caption">Gaming Convention Poster</div>
+                </div>
+
+                <div class="media-item" data-type="image">
+                    <div class="media-wrapper">
+                        <img src="images/invite.png" alt="Portfolio image 5">
+                    </div>
+                    <div class="media-caption">Wedding Invite</div>
+                </div>
+
+                <div class="media-item" data-type="image">
+                    <div class="media-wrapper">
+                        <img src="images/Flyer1.png" alt="Portfolio image 5">
+                    </div>
+                    <div class="media-caption">Flyer Redesign</div>
+                </div>
+
+                <div class="media-item" data-type="image">
+                    <div class="media-wrapper">
+                        <img src="images/Flyer2.png" alt="Portfolio image 5">
+                    </div>
+                    <div class="media-caption">Flyer Redesign</div>
+                </div>
+
+
+                
+                <!-- Article example (if needed) -->
+                <article>
+                    <h2>Project Case Study</h2>
+                    <p>This is an example of written content that could be included alongside media items.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script>
+        // Modal functionality
+        const modal = document.getElementById("modal");
+        const modalContent = document.getElementById("modal-content-container");
+        const closeBtn = document.querySelector(".close");
+        const mediaItems = document.querySelectorAll(".media-item");
         
-<main>
-<section>
-    <div class="container">
-        <img src="images/1.JPG" alt="HTML5 Icon">
-        <img src="images/2.JPG" alt="HTML5 Icon">
-        <img src="images/3.JPG" alt="HTML5 Icon">
-        <img src="images/4.JPG" alt="HTML5 Icon">
-        <img src="images/5.JPG" class = "crate" alt="HTML5 Icon">
-       
-          <video  controls>
-            <source src="videos/2.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video>
-
-        <iframe width="420" height="315"
-          src="https://www.youtube.com/embed/jfi8CMO-uK4">
-        </iframe>
-
-        <iframe width="420" height="315"
-        src="https://www.youtube.com/embed/Wmzt2cSadMU">
-        </iframe>
-
-        <iframe width="420" height="315"
-        src="https://www.youtube.com/embed/GUgIWZRDCTI">
-        </iframe>
-  
-  
-
-
-        <article id="myBtn">
-            2  
-        </article>
+        // Add click event to all media items
+        mediaItems.forEach(item => {
+            item.addEventListener("click", function() {
+                // Get the content based on media type
+                const mediaType = this.getAttribute("data-type");
+                let content;
+                
+                if (mediaType === "image") {
+                    const img = this.querySelector("img");
+                    content = `<img src="${img.src}" alt="${img.alt}">`;
+                } else if (mediaType === "video") {
+                    const video = this.querySelector("video");
+                    content = `<video controls autoplay>
+                        <source src="${video.querySelector("source").src}" type="video/mp4">
+                    </video>`;
+                } else if (mediaType === "youtube") {
+                    const iframe = this.querySelector("iframe");
+                    // Add autoplay parameter to YouTube URL
+                    let src = iframe.src;
+                    if (src.includes('?')) {
+                        src += '&autoplay=1';
+                    } else {
+                        src += '?autoplay=1';
+                    }
+                    content = `<iframe src="${src}" title="${iframe.title}" allowfullscreen></iframe>`;
+                }
+                
+                // Set content and show modal
+                modalContent.innerHTML = content;
+                modal.style.display = "block";
+                document.body.style.overflow = "hidden";
+            });
+        });
         
-    </div>
-</section>
-</main>
-
-<script>
-    let x = document.cookie;
-    document.getElementById("p1").innerHTML = x;
-    console.log(x);
-</script>
-   
-<script>
-
-    
-    var modal = document.getElementById("modal");
-    document.getElementById("myBtn").addEventListener("click", function() {
-        modal.style.display = "block";
-        body.style.overflow = "hidden";
-       
-    });
-</script>
-
-<script>
-
-    var modal = document.getElementById("modal");
-    var body = document.getElementById("body");
-    document.getElementById("modal").addEventListener("click", function() {
-        body.style.overflowY = "scroll"; 
-        modal.style.display = "none";
-        var cookie_test = document.cookie = "username=John Doe";
-        var cookie_test2 = document.cookie = "username2=Jane Doe";
-        console.log(cookie_test);
-        console.log(cookie_test2);
-        document.getElementById("p1").innerHTML = cookie_test;
-        let x = document.cookie;
-        console.log(x)
-      
+        // Close modal when clicking the close button
+        closeBtn.addEventListener("click", function() {
+            modal.style.display = "none";
+            document.body.style.overflow = "scroll";
+            modalContent.innerHTML = ""; // Clear content
+        });
         
-       
-    });
-</script>
-
-
-    
+        // Close modal when clicking outside of content
+        modal.addEventListener("click", function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+                document.body.style.overflow = "scroll";
+                modalContent.innerHTML = ""; // Clear content
+            }
+        });
+        
+        // Add escape key functionality to close modal
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Escape" && modal.style.display === "block") {
+                modal.style.display = "none";
+                document.body.style.overflow = "scroll";
+                modalContent.innerHTML = "";
+            }
+        });
+    </script>
 </body>
 </html>

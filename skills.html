@@ -6,129 +6,187 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <title>Adam Carrier's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Adam Carrier's Portfolio - Skills</title>
 </head>
-<body id = "body">
-    
-    <div id = "modal" class = "modal">
-        <div class ="modal-content">
-            <article class ="close">X</article>
-            <article class = "video-image"></article>
-            
-        </div>
-    </div>
+<body>
+    <!-- Header and Navigation -->
     <header>
-
-        <a href="index.html">Adams Carrier's Portfolio</a>
-
+        <a href="index.html">Portfolio</a>
         <nav>
-            
-            <a href="contact.html" id="Nav_Text1">Contact</a>
-            <a href="about.html" id="Nav_Text">About</a>
-            <a href="projects.html" id="Nav_Text">Projects</a>
-            <a href="skills.html" id="Nav_Text">Skills</a>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html" class="active">Skills</a>
         </nav>
-
     </header>
+    <div class="nav_deco"></div>
 
-    <div class = "nav_deco"></div>
+    <!-- Main Content -->
+    <main>
+        <section class="skills-section">
+            <h1>Technical Skills</h1>
+            
+            <div class="skills-container">
+                <!-- Design Skills -->
+                <div class="skill-category">
+                    <h2>Design Tools</h2>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="images/skills/illustrator.png" alt="Adobe Illustrator">
+                            </div>
+                            <div class="skill-info">
+                                <h3>Adobe Illustrator</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="images/skills/photoshop.png" alt="Adobe Photoshop">
+                            </div>
+                            <div class="skill-info">
+                                <h3>Adobe Photoshop</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="images/skills/xd.png" alt="Adobe XD">
+                            </div>
+                            <div class="skill-info">
+                                <h3>Adobe XD</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="images/skills/figma.png" alt="Figma">
+                            </div>
+                            <div class="skill-info">
+                                <h3>Figma</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video Editing Skills -->
+                <div class="skill-category">
+                    <h2>Video & Animation</h2>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="images/skills/premiere.png" alt="Adobe Premiere Pro">
+                            </div>
+                            <div class="skill-info">
+                                <h3>Adobe Premiere Pro</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="images/skills/aftereffects.png" alt="Adobe After Effects">
+                            </div>
+                            <div class="skill-info">
+                                <h3>Adobe After Effects</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="images/skills/blender.png" alt="Blender">
+                            </div>
+                            <div class="skill-info">
+                                <h3>Blender</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Development Skills -->
+                <div class="skill-category">
+                    <h2>Web Development</h2>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="images/skills/html.png" alt="HTML">
+                            </div>
+                            <div class="skill-info">
+                                <h3>HTML</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="images/skills/css.png" alt="CSS">
+                            </div>
+                            <div class="skill-info">
+                                <h3>CSS</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="images/skills/javascript.png" alt="JavaScript">
+                            </div>
+                            <div class="skill-info">
+                                <h3>JavaScript</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="images/skills/react.png" alt="React">
+                            </div>
+                            <div class="skill-info">
+                                <h3>React</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    
-        
-<main>
-<section>
-    <div class="container">
-        <img src="images/1.JPG" alt="HTML5 Icon">
-        <img src="images/2.JPG" alt="HTML5 Icon">
-        <img src="images/3.JPG" alt="HTML5 Icon">
-        <img src="images/4.png" alt="HTML5 Icon">
-        <img src="images/5.png" alt="HTML5 Icon">
-        <video  controls>
-            <source src="videos/1.mp4" type="video/mp4">
-
-          Your browser does not support the video tag.
-          </video>
-          <video  controls>
-            <source src="videos/2.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video>
-    
-
-        <article id="myBtn">
-            2  
-        </article>
-        <article>
-            
-        </article>
-        <article></article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-        
-    </div>
-</section>
-</main>
-   
-<script>
-
-    
-    var modal = document.getElementById("modal");
-    document.getElementById("myBtn").addEventListener("click", function() {
-        modal.style.display = "block";
-        body.style.overflow = "hidden";
-       
-    });
-</script>
-
-<script>
-
-    var modal = document.getElementById("modal");
-    var body = document.getElementById("body");
-    document.getElementById("modal").addEventListener("click", function() {
-        body.style.overflowY = "scroll"; 
-        modal.style.display = "none";
-        
-       
-    });
-</script>
-
-
-    
+    <footer>
+        <p>© 2025 Adam Carrier. All rights reserved.</p>
+    </footer>
 </body>
 </html>
