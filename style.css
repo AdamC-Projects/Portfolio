@@ -44,7 +44,6 @@ nav {
 a {
   color: rgb(45, 45, 80);
   text-decoration: none;
-  transition: all 0.2s ease;
 }
 
 header > a {
