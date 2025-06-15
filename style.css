@@ -4,9 +4,13 @@ html {
 
 body {
   overflow-y: scroll;
-  font-family: "Open Sans", sans-serif;
+  /*font-family: "Open Sans", sans-serif; */
+  font-family: "DM Sans", sans-serif;
+ 
+
   margin: 0;
   box-sizing: border-box;
+ 
 }
 
 *, *:before, *:after {
@@ -25,10 +29,19 @@ header {
 
 h1 {
   color: rgb(45, 45, 80);
-  text-decoration: underline;
-  font-size: clamp(1.2rem, 2vw, 2rem);
-    margin-left: 2rem;
-    font-weight: 500;
+  font-size: clamp(1.5rem, 1vw, 2rem);
+    padding: 0 2.5%;
+    font-weight: bolder;
+    
+}
+
+h2 {
+  color: rgb(97, 97, 97);
+  font-size: clamp(0.9rem, 1vw, 2rem);
+  margin-left: 2rem;
+  font-weight: 400;
+  margin: 0 2.5%;
+ 
     
 }
 
@@ -50,18 +63,25 @@ a {
 }
 
 header > a {
-  font-size: clamp(1.2rem, 2vw, 2rem);
-  font-weight: 600;
+  font-size: clamp(2rem, 1vw, 2rem);
+  font-weight: Bolder;
+}
+
+header > a:hover {
+ text-decoration: none;
+ background-color: transparent;
+ color: rgb(45, 45, 80);
 }
 
 header nav a {
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-size: clamp(1rem, 1vw, 1.5rem);
   margin-left: 2rem;
 }
 
 a:hover {
   color: rgb(10, 10, 17);
   background-color: rgb(247, 247, 247);
+  text-decoration: underline;
 }
 
 
@@ -69,9 +89,9 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  padding: 2rem;
+  padding: 2.5%;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1900px;
   margin: 0 auto;
 }
 
@@ -112,6 +132,8 @@ a:hover {
   max-height: 300px;
   object-fit: contain; 
   display: block;
+
+  
 }
 
 
